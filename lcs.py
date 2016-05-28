@@ -44,7 +44,7 @@ def align_by_lcs(str, lcs):
     i = 0
     for c in str:
         if i == len(lcs):
-            result += c
+            result += "_"
         elif c == lcs[i]:
             result += c
             i += 1
